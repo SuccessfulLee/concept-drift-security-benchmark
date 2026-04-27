@@ -102,7 +102,7 @@ This per-task file structure is deliberately chosen to support class-incremental
 
 **Independent reconstruction.** Researchers can reconstruct this benchmark by:  
 (1) downloading the CIFAR-100-C source dataset from its official release;  
-(2) running the provided construction script: `python protocols/build_visual_evolution.py`;  
+(2) running the provided construction script: `python data/build_visual_evolution.py`;  
 (3) verifying that the output directory matches the structure shown above.
 
 The construction script encodes the full task-corruption schedule, the pixel-wise averaging scheme, the 70%/30% train/test split, and the fixed random seed; running it on the same source dataset will produce a byte-identical benchmark.
