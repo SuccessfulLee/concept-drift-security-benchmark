@@ -32,6 +32,7 @@ This benchmark simulates volumetric attack surges, such as large-scale spam camp
 **Source dataset.** Samples are drawn from the Spam Filtering corpus, a publicly available email-classification dataset. Each row represents a feature vector extracted from an email, with the binary class label `spamorlegitimate ∈ {spam, legitimate}`. In the original corpus used for reconstruction, the dataset contains 9,324 samples, including 2,387 spam samples and 6,937 legitimate samples.
 
 **Construction procedure.** Following Section 7.2.1 (1) of the paper, we manipulate the spam-to-legitimate ratio across 10 sequential time windows. The spam proportion gradually increases from 10% to 90%, simulating drift induced by volumetric spam campaign surges. Each time window contains `floor(9324 / 10) = 932` samples. The resulting benchmark contains 9,320 temporally ordered samples, with the remaining 4 samples excluded due to integer partitioning.
+Spam fractions in the table below are nominal target proportions; actual fractions deviate slightly due to integer sample-count rounding.
 
 The detailed construction schedule is shown below:
 
