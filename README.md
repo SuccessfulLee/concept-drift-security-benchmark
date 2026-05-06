@@ -59,7 +59,7 @@ The detailed construction schedule is shown below:
 
 Because the high-intensity windows require more spam samples than are available in the original corpus, sampling with replacement may be used for the spam class during reconstruction. To ensure reproducibility, researchers are encouraged to fix the random seed when performing the sampling process.
 
-### 3. CIFAR-100-C Visual Adversarial Evolution (`data/visual_evolution/`)
+### 3. CIFAR-100-C Visual Evolution (`data/visual_evolution/`)
 
 This benchmark simulates progressively intensifying visual adversarial threats across 10 sequential tasks. Unlike the KDD- and Spam-based benchmarks, which target structured-stream drift, this benchmark is designed to emulate the cumulative evolution of visual adversarial attacks, ranging from single-corruption low-severity perturbations to composite multi-corruption high-severity attacks.
 
